@@ -1,0 +1,42 @@
+// tsconfig.types.json
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": false,
+        "baseUrl": ".",
+        "paths": {
+            "@@/*": ["src/*"]
+        },
+        "declaration": true, /* 生成相应的 '.d.ts' file. */
+        "declarationDir": "./dist/types", /* 类型声明文件输出目录 */
+        "emitDeclarationOnly": true, /* 只生成声明文件，不生成 js 文件*/
+        "rootDir": "./src" /* 指定输出文件目录（用于输出），用于控制输出目录结构 */
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "./node_modules",
+        "./src/utils"
+    ],
+
+}
+
+
+// 编译选项 https://www.dengwb.com/typescript/configuration/compiler-options.html#incremental
