@@ -1,6 +1,6 @@
 class DrRegExp {
     /**
-     * master
+     * master 1
      */
     public readonly Master: RegExp = /^[1-9]d*$/
 }
